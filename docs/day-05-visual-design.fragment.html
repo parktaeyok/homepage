@@ -1,0 +1,114 @@
+<style>
+#qms-plan { --q-bg:light-dark(#ffffff,#111d2e); --q-text:light-dark(#13253d,#edf3fa); --q-sub:light-dark(#506176,#b4c3d5); --q-line:light-dark(#d4deea,#42556d); --q-soft:light-dark(#f2f6fb,#18293e); --q-accent:light-dark(#205bc2,#a7cfff); --q-radius:4px; font-family:'Malgun Gothic','Apple SD Gothic Neo',system-ui,sans-serif; color:var(--q-text); line-height:1.75; width:100%; }
+#qms-plan * { box-sizing:border-box; }
+#qms-plan .q-page { background:var(--q-bg); width:100%; margin:auto; container-type:inline-size; }
+#qms-plan .q-head { display:flex; align-items:center; justify-content:flex-start; gap:16px; flex-wrap:wrap; padding:20px 16px; border-bottom:1px solid var(--q-line); text-align:left; }
+#qms-plan a { color:inherit; text-decoration:none; }
+#qms-plan .q-brand { font-size:18px; font-weight:700; margin-right:auto; text-align:left; }
+#qms-plan .q-nav { display:flex; align-items:center; gap:18px; flex-wrap:wrap; font-size:14px; }
+#qms-plan .q-nav a { display:inline-flex; align-items:center; min-height:44px; }
+#qms-plan .q-menu { display:none; }
+#qms-plan .q-button { display:inline-flex; justify-content:center; align-items:center; min-height:48px; padding:12px 20px; border:1px solid var(--q-line); border-radius:var(--q-radius); background:var(--q-bg); color:var(--q-text); font:inherit; font-size:16px; font-weight:600; }
+#qms-plan .q-primary { background:var(--q-accent); color:light-dark(#fff,#14202e); border-color:var(--q-accent); }
+#qms-plan .q-section { padding:64px 32px; border-bottom:1px solid var(--q-line); scroll-margin-top:16px; }
+#qms-plan .q-hero { --q-bg:light-dark(#112840,#0b1b30); --q-text:light-dark(#ffffff,#edf3fa); --q-sub:light-dark(#c5d4e8,#c5d4e8); --q-line:light-dark(#536e8c,#536e8c); --q-soft:light-dark(#1b3856,#17314c); --q-accent:light-dark(#b6d5ff,#b6d5ff); display:grid; grid-template-columns:1.4fr 1fr; gap:40px; align-items:center; padding-top:72px; padding-bottom:72px; background:var(--q-bg); color:var(--q-text); }
+#qms-plan .q-hero .q-primary { background:var(--q-accent); color:light-dark(#112840,#112840); }
+#qms-plan h1 { font-size:clamp(32px,4.8cqw,52px); line-height:1.25; letter-spacing:-.035em; margin:16px 0 24px; word-break:keep-all; overflow-wrap:anywhere; }
+#qms-plan h2 { font-size:28px; line-height:1.4; letter-spacing:-.025em; margin:0 0 28px; word-break:keep-all; overflow-wrap:anywhere; }
+#qms-plan h3 { font-size:17px; margin:0 0 10px; }
+#qms-plan p { font-size:16px; margin:8px 0; word-break:keep-all; overflow-wrap:anywhere; }
+#qms-plan .q-kicker { font-size:14px; color:var(--q-accent); font-weight:600; }
+#qms-plan .q-sub { color:var(--q-sub); }
+#qms-plan .q-actions { display:flex; gap:10px; flex-wrap:wrap; margin-top:24px; }
+#qms-plan .q-scope { background:var(--q-soft); padding:28px; border-top:3px solid var(--q-accent); border-radius:var(--q-radius); }
+#qms-plan .q-scope ul { padding:0; margin:20px 0; list-style:none; }
+#qms-plan .q-scope li { padding:12px 0; margin:0; font-size:16px; border-bottom:1px solid var(--q-line); }
+#qms-plan .q-three { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; }
+#qms-plan .q-number { font-size:14px; display:block; color:var(--q-accent); margin-bottom:16px; font-weight:700; letter-spacing:.08em; }
+#qms-plan .q-three article { border-top:2px solid var(--q-line); padding-top:24px; }
+#qms-plan #qp-features { background:var(--q-soft); }
+#qms-plan #qp-company { border-left:4px solid var(--q-accent); }
+#qms-plan #qp-contact { background:var(--q-soft); }
+#qms-plan .q-feature { display:grid; grid-template-columns:1fr 2fr; gap:20px; border-top:1px solid var(--q-line); padding:16px 0; }
+#qms-plan .q-feature h3,#qms-plan .q-feature p { margin:0; }
+#qms-plan .q-steps { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:18px; list-style:none; padding:0; margin:0; }
+#qms-plan .q-steps p { font-size:14px; }
+#qms-plan .q-two { display:grid; grid-template-columns:1fr 1.6fr; gap:28px; }
+#qms-plan .q-phone { display:inline-block; font-size:22px; font-weight:600; min-height:44px; color:var(--q-accent); overflow-wrap:anywhere; }
+#qms-plan .q-form { min-width:0; background:var(--q-bg); padding:28px; border:1px solid var(--q-line); border-radius:var(--q-radius); }
+#qms-plan fieldset { margin:0; padding:0; border:0; min-width:0; }
+#qms-plan .q-fields { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+#qms-plan .q-field { display:flex; flex-direction:column; gap:6px; font-size:14px; }
+#qms-plan .q-span { grid-column:1/-1; }
+#qms-plan input,#qms-plan textarea { width:100%; min-width:0; min-height:44px; padding:10px; border:1px solid var(--q-line); border-radius:3px; font:inherit; font-size:16px; background:var(--q-bg); color:var(--q-text); opacity:1; -webkit-text-fill-color:var(--q-text); }
+#qms-plan .q-checks { display:flex; flex-wrap:wrap; gap:6px 16px; }
+#qms-plan .q-checks label { display:flex; align-items:center; gap:8px; min-height:44px; font-size:14px; }
+#qms-plan .q-checks input { width:18px; min-height:18px; }
+#qms-plan .q-note { font-size:14px; color:var(--q-sub); margin-bottom:16px; }
+#qms-plan .q-footer { padding:24px 28px; display:flex; flex-wrap:wrap; gap:12px 24px; font-size:14px; color:var(--q-sub); }
+#qms-plan [hidden] { display:none !important; }
+#qms-plan .q-button:disabled { background:var(--q-soft); color:var(--q-sub); border-color:var(--q-line); cursor:not-allowed; }
+#qms-plan input:disabled,#qms-plan textarea:disabled { background:var(--q-soft); }
+#qms-plan .q-nav a:hover { text-decoration:underline; text-underline-offset:5px; }
+@container (max-width:1023px) {
+ #qms-plan .q-menu { display:inline-flex; }
+ #qms-plan .q-nav { display:none; flex-basis:100%; flex-direction:column; align-items:stretch; gap:4px; }
+ #qms-plan .q-nav.q-open { display:flex; }
+ #qms-plan .q-three { grid-template-columns:repeat(2,minmax(0,1fr)); }
+ #qms-plan .q-steps { grid-template-columns:repeat(3,minmax(0,1fr)); }
+}
+@container (max-width:767px) {
+ #qms-plan .q-head,#qms-plan .q-section,#qms-plan .q-footer { padding:40px 20px; }
+ #qms-plan .q-head { gap:8px; padding:16px; }
+ #qms-plan .q-brand { font-size:16px; }
+ #qms-plan .q-hero,#qms-plan .q-two,#qms-plan .q-three,#qms-plan .q-feature,#qms-plan .q-fields,#qms-plan .q-steps { grid-template-columns:minmax(0,1fr); }
+ #qms-plan .q-feature { gap:6px; }
+ #qms-plan .q-actions { flex-direction:column; }
+ #qms-plan h2 { font-size:22px; }
+ #qms-plan .q-form { padding:20px 16px; }
+ #qms-plan .q-scope { padding:24px; }
+ #qms-plan .q-steps li { padding-bottom:12px; border-bottom:1px solid var(--q-line); }
+}
+</style>
+<div id="qms-plan" lang="ko" aria-label="인지아이앤에스 홈페이지 5일차 시각 디자인">
+ <div class="q-page">
+  <header class="q-head" id="qp-top">
+   <a class="q-brand cursor-interaction" href="#qp-top">(주)인지아이앤에스</a>
+   <button class="q-button q-menu cursor-interaction" type="button" aria-expanded="false" aria-controls="qp-nav">메뉴</button>
+   <nav id="qp-nav" class="q-nav" aria-label="주 메뉴">
+    <a class="cursor-interaction" href="#qp-services">서비스</a><a class="cursor-interaction" href="#qp-features">주요 기능</a><a class="cursor-interaction" href="#qp-process">구축 절차</a><a class="cursor-interaction" href="#qp-company">회사 소개</a><a class="q-button q-primary cursor-interaction" href="#qp-contact">도입 상담</a>
+   </nav>
+  </header>
+  <main>
+   <section class="q-section q-hero" aria-labelledby="qp-title">
+    <div><div class="q-kicker">품질관리 기업을 위한 QMS 맞춤 개발</div><p class="q-sub">ISO 9001 · IATF 16949</p><h1 id="qp-title">품질관리 업무를<br>하나의 QMS로</h1><p class="q-sub">고객사별 문서, 심사 일정, 부적합과 시정조치를 연결합니다. (주)인지아이앤에스가 귀사의 업무 흐름에 맞춰 QMS(품질경영시스템)를 설계하고 개발합니다.</p><div class="q-actions"><a class="q-button q-primary cursor-interaction" href="#qp-contact">QMS 도입 상담</a><a class="q-button cursor-interaction" href="#qp-features">주요 기능 보기</a></div></div>
+    <aside class="q-scope" aria-label="QMS 관리 범위 요약"><h3>고객사별 품질 업무</h3><ul><li>문서 · 검토 · 승인</li><li>심사 일정 · 증빙 자료</li><li>부적합 · 원인 분석 · 시정조치</li><li>대응 이력 · 진행 현황</li></ul><p class="q-note">맞춤 개발 구성 예시</p></aside>
+   </section>
+   <section id="qp-services" class="q-section"><h2>업무 분석부터 구축 후 운영까지</h2><div class="q-three"><article><span class="q-number">01</span><h3>업무 분석·설계</h3><p class="q-sub">현재 문서와 업무 절차를 살펴보고 고객사별 관리 기준과 처리 흐름을 설계합니다.</p></article><article><span class="q-number">02</span><h3>맞춤 개발·구축</h3><p class="q-sub">필요한 관리 기능을 업무 우선순위에 맞춰 개발합니다.</p></article><article><span class="q-number">03</span><h3>운영·유지보수</h3><p class="q-sub">합의한 지원 범위에 따라 사용 중 필요한 수정과 기능 개선을 지원합니다.</p></article></div></section>
+   <section id="qp-features" class="q-section"><h2>업무에 맞춰 구성하는 관리 기능</h2><div class="q-feature"><h3>문서·승인</h3><p class="q-sub">개정 이력과 검토·승인 상태를 함께 확인합니다.</p></div><div class="q-feature"><h3>심사·인증 업무</h3><p class="q-sub">일정, 체크리스트, 증빙과 후속 조치를 연결합니다.</p></div><div class="q-feature"><h3>부적합·시정조치</h3><p class="q-sub">문제 등록부터 원인 분석과 개선 효과 확인까지 관리합니다.</p></div><div class="q-feature"><h3>고객사·협력사 대응</h3><p class="q-sub">요청과 대응 이력, 담당자 및 처리 기한을 정리합니다.</p></div><div class="q-feature"><h3>고객사별 현황</h3><p class="q-sub">고객사별 일정과 미완료 업무를 모아 확인합니다.</p></div><p class="q-note">개발 가능한 기능 소개이며, 실제 개발 범위는 상담 후 결정합니다.</p></section>
+   <section id="qp-process" class="q-section"><h2>QMS 구축, 이렇게 진행합니다</h2><ol class="q-steps"><li><span class="q-number">01</span><h3>업무 분석</h3><p class="q-sub">관리 방식과 과제 확인</p></li><li><span class="q-number">02</span><h3>시스템 설계</h3><p class="q-sub">화면과 처리 흐름 정리</p></li><li><span class="q-number">03</span><h3>개발</h3><p class="q-sub">합의한 기능 구현</p></li><li><span class="q-number">04</span><h3>검증</h3><p class="q-sub">사용 흐름 점검·수정</p></li><li><span class="q-number">05</span><h3>교육·운영</h3><p class="q-sub">사용 안내와 운영 지원</p></li></ol></section>
+   <section id="qp-company" class="q-section q-two"><h2>(주)인지아이앤에스</h2><div><p>품질관리 기업을 위한 QMS 맞춤 개발과 운영 관리를 제공합니다.</p><p class="q-sub">ISO 9001 및 자동차 분야 IATF 16949 관련 품질 업무를 중심으로 기업별 관리 방식에 맞는 시스템을 설계합니다.</p></div></section>
+   <section id="qp-contact" class="q-section q-two"><div><h2>어떤 품질 업무를<br>관리하고 싶으신가요?</h2><p class="q-sub">현재 관리 방식과 필요한 기능을 알려주시면 구축 범위를 함께 정리하겠습니다.</p><p class="q-kicker">전화 상담</p><a class="q-phone cursor-interaction" href="tel:01041031467">010-4103-1467</a></div>
+    <div class="q-form"><p id="qp-form-note" class="q-note">화면 설계용 · 상담 접수는 아직 연결되지 않았습니다.</p><fieldset disabled aria-describedby="qp-form-note"><legend class="q-note">상담 문의 양식</legend><div class="q-fields"><label class="q-field">회사명 (필수)<input type="text" autocomplete="off"></label><label class="q-field">담당자명 (필수)<input type="text" autocomplete="off"></label><label class="q-field">회신용 이메일 (필수)<input type="email" autocomplete="off"></label><label class="q-field">전화번호 (선택)<input type="tel" autocomplete="off"></label><fieldset class="q-span"><legend class="q-note">관심 기능 (선택·복수 선택)</legend><div class="q-checks"><label><input type="checkbox">문서·승인</label><label><input type="checkbox">심사·인증 업무</label><label><input type="checkbox">부적합·시정조치</label><label><input type="checkbox">고객사·협력사 대응</label><label><input type="checkbox">고객사별 현황</label><label><input type="checkbox">기타·상담 후 결정</label></div></fieldset><label class="q-field q-span">희망 구축 시기 (선택)<input type="text" placeholder="미정이어도 괜찮습니다"></label><label class="q-field q-span">문의 내용 (필수)<textarea rows="3" placeholder="현재 관리 방식, 필요한 기능, 예상 사용자 수"></textarea></label><p class="q-note q-span">개인정보 안내·동의 영역 — 운영 기준 확정 후 반영</p><button type="button" class="q-button q-primary q-span">상담 요청 보내기 (연결 전)</button></div></fieldset></div>
+   </section>
+  </main>
+  <footer class="q-footer"><span>(주)인지아이앤에스</span><a href="tel:01041031467">010-4103-1467</a><span>개인정보 안내 — 공개 전 확정</span></footer>
+ </div>
+</div>
+<script>
+(() => {
+ const root = document.getElementById('qms-plan');
+ const page = root.querySelector('.q-page');
+ const menu = root.querySelector('.q-menu');
+ const nav = root.querySelector('.q-nav');
+ const state = { screen: 'desktop', radius:4 };
+ function closeMenu() { nav.classList.remove('q-open'); menu.setAttribute('aria-expanded','false'); menu.textContent='메뉴'; }
+ menu.addEventListener('click', () => { const open = menu.getAttribute('aria-expanded') !== 'true'; nav.classList.toggle('q-open',open); menu.setAttribute('aria-expanded',String(open)); menu.textContent=open?'닫기':'메뉴'; });
+ root.addEventListener('keydown', event => { if(event.key==='Escape' && menu.getAttribute('aria-expanded')==='true') { closeMenu(); menu.focus(); } });
+ root.querySelectorAll('a[href^="#"]').forEach(link => link.addEventListener('click', event => { const target = root.querySelector(link.getAttribute('href')); if(!target) return; event.preventDefault(); closeMenu(); target.scrollIntoView({block:'start',behavior:'instant'}); }));
+ function render() { page.style.maxWidth = state.screen==='mobile' ? '390px' : 'none'; root.style.setProperty('--q-radius',state.radius+'px'); closeMenu(); }
+ render();
+ if(globalThis.Tweak) { const tweak = new Tweak({container:root,onChange:render}); tweak.addSelect(state,'screen',{label:'화면 배치',options:[{label:'PC',value:'desktop'},{label:'모바일',value:'mobile'}]}); tweak.addSlider(state,'radius',{label:'버튼·패널 모서리',min:0,max:12,step:2,unit:'px'}); }
+ if(globalThis.ResizeObserver) { let lastWide = page.clientWidth>1023; new ResizeObserver(() => { const wide=page.clientWidth>1023; if(wide!==lastWide) closeMenu(); lastWide=wide; }).observe(page); }
+})();
+</script>
