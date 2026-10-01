@@ -26,6 +26,8 @@ const features = [
   ["고객사별 현황 관리", "고객사별 일정과 미완료 업무, 주요 관리 항목을 한눈에 확인하도록 구성합니다."],
 ];
 
+const featureIds = ["feature-documents", "feature-audits", "feature-corrective-actions", "feature-customer-response", "feature-customer-status"];
+
 const steps = [
   ["01", "상담·업무 분석", "현재 관리 방식과 필요한 기능을 확인합니다."],
   ["02", "시스템 설계", "화면, 관리 항목과 업무 처리 흐름을 정리합니다."],
@@ -80,10 +82,10 @@ export default function Home() {
             <div className={styles.heroVisual} aria-label="고객사별 품질 업무 구성 예시">
               <div className={styles.visualTop}><span>QMS / WORKFLOW</span><span className={styles.liveDot}>맞춤 개발 구성 예시</span></div>
               <div className={styles.visualTitle}>고객사별 품질 업무</div>
-              <div className={styles.visualLine}><span className={styles.visualNumber}>01</span><strong>문서 · 검토 · 승인</strong><span aria-hidden="true">↗</span></div>
-              <div className={styles.visualLine}><span className={styles.visualNumber}>02</span><strong>심사 일정 · 증빙 자료</strong><span aria-hidden="true">↗</span></div>
-              <div className={styles.visualLine}><span className={styles.visualNumber}>03</span><strong>부적합 · 원인 분석 · 시정조치</strong><span aria-hidden="true">↗</span></div>
-              <div className={styles.visualLine}><span className={styles.visualNumber}>04</span><strong>대응 이력 · 진행 현황</strong><span aria-hidden="true">↗</span></div>
+              <a className={styles.visualLine} href="#feature-documents"><span className={styles.visualNumber}>01</span><strong>문서 · 검토 · 승인</strong><span aria-hidden="true">↗</span></a>
+              <a className={styles.visualLine} href="#feature-audits"><span className={styles.visualNumber}>02</span><strong>심사 일정 · 증빙 자료</strong><span aria-hidden="true">↗</span></a>
+              <a className={styles.visualLine} href="#feature-corrective-actions"><span className={styles.visualNumber}>03</span><strong>부적합 · 원인 분석 · 시정조치</strong><span aria-hidden="true">↗</span></a>
+              <a className={styles.visualLine} href="#feature-customer-response"><span className={styles.visualNumber}>04</span><strong>대응 이력 · 진행 현황</strong><span aria-hidden="true">↗</span></a>
               <div className={styles.visualFoot}>각 업무의 흐름을 연결하는 시스템을 설계합니다.</div>
             </div>
           </div>
@@ -100,7 +102,7 @@ export default function Home() {
         <section id="features" className={styles.features} aria-labelledby="features-title">
           <div className={styles.container}>
             <div className={styles.sectionHead}><div><p className={styles.kicker}>CAPABILITIES / 02</p><h2 id="features-title">귀사의 품질 업무에 맞춰<br />구성하는 관리 기능</h2></div><p>필요한 관리 항목과 처리 절차를 확인하고,<br />업무에 맞는 기능을 설계합니다.</p></div>
-            <div className={styles.featureList}>{features.map(([title, description], index) => <div className={styles.featureRow} key={title}><span className={styles.featureIndex}>0{index + 1}</span><h3>{title}</h3><p>{description}</p><span className={styles.featurePlus} aria-hidden="true">＋</span></div>)}</div>
+<div className={styles.featureList}>{features.map(([title, description], index) => <div className={styles.featureRow} id={featureIds[index]} key={title}><span className={styles.featureIndex}>0{index + 1}</span><h3>{title}</h3><p>{description}</p><span className={styles.featurePlus} aria-hidden="true">＋</span></div>)}</div>
             <p className={styles.featureNote}>실제 개발 범위는 상담을 통해 결정합니다.</p>
           </div>
         </section>

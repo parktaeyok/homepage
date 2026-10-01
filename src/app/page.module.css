@@ -30,6 +30,7 @@
 .visualTitle { font-size: 23px; font-weight: 750; letter-spacing: -.05em; margin: 34px 0 17px; }
 .visualLine { border-top: 1px solid #45617b; display: flex; align-items: center; gap: 16px; min-height: 59px; }
 .visualLine:last-of-type { border-bottom: 1px solid #45617b; }
+.visualLine:hover, .visualLine:focus-visible { background: #294a69; }
 .visualNumber { color: #85baff; font-size: 12px; }
 .visualLine strong { font-size: 14px; font-weight: 600; flex: 1; word-break: keep-all; }
 .visualLine > span:last-child { color: #85baff; }
@@ -50,6 +51,7 @@
 .cardArrow { position: absolute; right: 24px; bottom: 19px; color: #205bc2; font-size: 20px; }
 .features { padding: 94px 0; background: #f2f6fb; }
 .featureList { border-top: 2px solid #13253d; }
+.featureRow:target { background: #e0ebfa; box-shadow: inset 4px 0 #205bc2; }
 .featureRow { display: grid; grid-template-columns: 65px 270px 1fr 22px; align-items: center; gap: 16px; min-height: 86px; border-bottom: 1px solid #d4deea; }
 .featureIndex { color: #205bc2; font-size: 12px; font-weight: 800; }
 .featureRow h3 { font-size: 18px; letter-spacing: -.04em; }
