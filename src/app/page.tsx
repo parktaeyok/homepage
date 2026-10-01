@@ -51,6 +51,7 @@ export default function Home() {
           <a href="#company">회사 소개</a>
         </nav>
         <a className={styles.headerCta} href="#contact">도입 상담 <span aria-hidden="true">↗</span></a>
+        <a className={styles.memberLink} href="/login">회원 로그인</a>
         <details className={styles.mobileNav}>
           <summary>메뉴 <span aria-hidden="true">☰</span></summary>
           <nav aria-label="모바일 주 메뉴">
@@ -59,6 +60,7 @@ export default function Home() {
             <a href="#process">구축 절차</a>
             <a href="#company">회사 소개</a>
             <a href="#contact">도입 상담</a>
+            <a href="/login">회원 로그인</a>
           </nav>
         </details>
       </header>

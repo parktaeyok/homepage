@@ -6,7 +6,7 @@
 
 ## 진행 상태
 
-Next.js 홈페이지의 서비스 소개 화면을 구현했습니다. 온라인 상담 접수 기능은 개인정보 운영 기준 확정 후 연결합니다.
+Next.js 서비스 소개 화면과 회원 가입·로그인·관리자 회원 목록을 구현했습니다. 회원 데이터는 Supabase ac_ingins 프로젝트에 저장합니다. 온라인 상담 접수 기능은 개인정보 운영 기준 확정 후 연결합니다.
 
 - [1일차 — 요구사항](docs/day-01-requirements.md)
 - [2일차 — 방문 흐름과 콘텐츠 기획](docs/day-02-customer-flow-and-content.md)
@@ -16,6 +16,7 @@ Next.js 홈페이지의 서비스 소개 화면을 구현했습니다. 온라인
 - [6일차 — 모바일·문의 상태 디자인](docs/day-06-mobile-refinement.md)
 - [7일차 — 개발 환경과 연결 상태](docs/day-07-environment.md)
 - [Supabase 데이터베이스 연결 안내](docs/database-setup.md)
+- [회원 가입·로그인 및 관리자 설정](docs/member-management.md)
 
 문구는 4일차 기준안을, 배치·동작은 3일차 설계를 기준으로 진행합니다. 상단 회사명은 왼쪽에 배치합니다.
 
